@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Inicio | Mirandum</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+     <!-- Nuevo Jonatan-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"> </script>
+</head><!--/head-->
+<body>
+
+    <!-- Jonatan -->
+    <!-- Se importa el menu de navegacion/header -->
+    <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mirandum</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="reque.html">Requerimientos</a></li>
+                <li><a href="mockups.html">Mockups</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opciones <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Registro</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Politica de Privacidad</a></li>
+                        <li><a href="#">Termunos de Uso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Login</a></li> 
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide wet-asphalt">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(images/slider/bg1.png)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/regalo.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1">Para un día especial regala un Mirandum!</h2>
+                                    <br>
+                                    <p class="boxed animation animated-item-2">Has sonreir a esa persona maravillosa</p>
+                                    <br>
+                                    <a class="btn btn-md animation animated-item-3" href="#">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/cliente-fiel.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1" style="color: #04B4AE">Primero eres tú</h2>
+                                    <p class="animation animated-item-2" style="color: #04B4AE">Estamos comprometidos con la satisfacción de nuestro cliente</p>
+                                    <a class="btn btn-md animation animated-item-3" href="#" style="color: #04B4AE">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="centered">
+                                    <div class="embed-container">
+                                        <!--<iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+
+
+
+    <section id="recent-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Diagramas</h3>
+                    <p>A continuación se muestra: diagrama de clases, diagrama caso de uso, diagrama de diesplegue y arbol de caracteristicas</p>
+                    <div class="btn-group">
+                        <a class="btn btn-danger" href="#scroller" data-slide="prev"><i class="icon-angle-left"></i></a>
+                        <a class="btn btn-danger" href="#scroller" data-slide="next"><i class="icon-angle-right"></i></a>
+                    </div>
+                    <p class="gap"></p>
+                </div>
+                <div class="col-md-9">
+                    <div id="scroller" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/miniatura1.png" alt="">
+                                                <h5 class="center">
+                                                    Casos de uso
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Diagrama de casos de uso" href="images/useCase.png" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/miniatura2.png" alt="">
+                                                <h5>
+                                                    Diagrama de clases
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Diagrama de clases" href="images/classDiagram.png" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/miniatura3.png" alt="">
+                                                <h5>
+                                                    Diagrama de despliegue
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Diagrama de despliegue" href="images/deploymentDiagram.png" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--/.row-->
+                            </div><!--/.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/miniatura4.png" alt="">
+                                                <h5>
+                                                    Arból de caracteristicas
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Arbol de caracteristicas" href="images/tree.png" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                                                <h5>
+                                                    Nova - Corporate site template
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                            
+                                    <div class="col-xs-4">
+                                        <div class="portfolio-item">
+                                            <div class="item-inner">
+                                                <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                                                <h5>
+                                                    Fornax - Apps site template
+                                                </h5>
+                                                <div class="overlay">
+                                                    <a class="preview btn btn-danger" title="Malesuada fames ac turpis egestas" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div><!--/.item-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div>
+    </section><!--/#recent-works-->
+    <!--Laura-->
+    <section id="testimonial" class="alizarin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center">
+                        <h2>Historias de Usuarios</h2>
+                        <p>Comprometidos con nuestros clientes</p>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <blockquote>
+                                <p>Yo como comprador quisiera llevar un registro de mis compras en donde me aparezca el día en que realice la compra y cuál fue su valor, de esta forma llevar un registro financiero con la empresa.
+                                </p>
+                                <small>Efraín Vitola</small>
+                            </blockquote>
+                            <blockquote>
+                                <p>A mi como usuario me gustaría poder navegar entre las categorías de los productos y poderlos filtrar por sus características, con la finalidad de ir descartando productos por sus especificaciones.</p>
+                                <small>Elena Cifuentes</small>
+                            </blockquote>
+                            <blockquote>
+                                <p>Yo como usuario quiero compartir mis ideas sobre los productos con las demás personas y además poder escuchar sus opiniones y sugerencias, de tal forma que me pueda basar en estos comentarios para la elección de mi producto.
+                                </p>
+                                <small>Ericka Fonseca </small>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-6">
+                            <blockquote>
+                                <p>Yo como usuario quiero conocer cuales son las especificaciones del producto, como su peso, su estilo, cómo son fabricados y cuales son los materiales utilizados en su elaboración, de tal forma que pueda conocer la calidad de mi adquisición.</p>
+                                <small>Úrsula Santos</small>
+                            </blockquote>
+                            <blockquote>
+                                <p>Yo como usuario quiero construir mis gafas, por ejemplo elegir su color, su estilo, el material, el tipo de lente, etc; para que de esta forma las gafas sólo las tenga yo.</p>
+                                <small>Carlos Alba </small>
+                            </blockquote>
+                            <blockquote>
+                                <p>Yo como usuario quisiera solicitar el cambio de productos sin hacer grandes trámites, para que de esta forma pueda modificar fácilmente la compra en caso de no sentirme cómodo con mi adquisición. </p>
+                                <small>Cesar Rivera </small>
+
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#testimonial-->
+
+
+    <!-- Jonatan -->
+    <!-- Se importa el menu de footer -->
+    <div ng-include src = " 'plantillas/footer.html' "></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
