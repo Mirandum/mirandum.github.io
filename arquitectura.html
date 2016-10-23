@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Arquitectura | Flat Theme</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Nuevo Jonatan-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"> </script>
+</head><!--/head-->
+<body>
+
+    
+        <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mirandum</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="index.html">Inicio</a></li>
+                <li ><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="reque.html">Requerimientos</a></li>
+                <li class="active"><a href="arquitectura.html">Arquitectura</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opciones <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Registro</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Politica de Privacidad</a></li>
+                        <li><a href="#">Termunos de Uso</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <section id="title" class="emerald">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Arquitectura</h1>
+                    <p>La arquitectura usada en nuestro proyecto es Modelo-Vista-Controlador.</p>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Arquitectura</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!--/#title-->
+
+    <section id="about-us" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="center">Arquitectura MVC</h2>
+                <p style="padding:10px"></p>
+                <p>La aplicación está sobre el lenguaje de programación Ruby, para hacer más sencilla la implementación usamos Rails que es un framework para hacer aplicaciones web con Ruby.  </p>
+
+                <p>Rails viene por defecto con arquitectura MVC es decir , que cuando creamos una aplicación con rails, se creará una carpeta llamada “app” donde se encontrarán los subdirectorios “model”, “view” y “controller”.</p>
+
+                <p>En la carpeta “model” se encuentran las entidades del negocio como lo son compra, producto , consumidor y administrador; en la carpeta “view” tenemos todos los archivos erb.html que son las vistas del usuario, es decir donde se despliega toda la información sobre el modelo actual y en la carpeta “controller” se encuentran los controladores que permiten la comunicación entre la vista y el modelo con el fin de tener una aplicación dinámica. 
+                </p>
+                
+            </div><!--/.col-sm-6-->
+            
+        </div><!--/.row-->
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Diagrama: Flujo MVC para ver productos</h3>
+                <div>
+                    
+                      <div class="portfolio-item">
+                            <div class="item-inner">
+                               <img class="img-responsive" src="images/mvc.png" alt="">
+                                   <h5>
+                                       Diagrama
+                                     </h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-danger" title="MVC flujo para ver productos" href="images/mvc.png" rel="prettyPhoto"><i class="icon-eye-open"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                                    
+                </div>
+            </div><!--/.col-sm-6-->
+            <div class="col-sm-6">
+               <h2 class="center">Veamos MVC en acción.</h2>
+               <p>El flujo para ver los productos en la aplicación sería el siguiente:</p>
+
+
+                <ul class="list-group">
+                  <li class="list-group-item">1. El usuario hace una petición al navegador para la URL /productos</li>
+                  <li class="list-group-item">2. El Rails router mapea la URL a la acción del controlador correspondiente, en este caso la acción es “index” en el controlador “productos”.</li>
+                  <li class="list-group-item">3. La acción index le pide al modelo Producto todos los productos que hay. (Productos.all)</li>
+                  <li class="list-group-item">4. El modelo Producto recupera todos los productos de la base de datos.</li>
+                  <li class="list-group-item">5. El modelo Producto retorna la lista de productos al controlador “productos”.</li>
+                  <li class="list-group-item">6. El controlador captura la lista de productos en la variable @productos la cual pasa a la vista index.</li>
+                  <li class="list-group-item">7. La vista index corre la página como un HTML.</li>
+                  
+                  <li class="list-group-item">8. El controlador “productos” envía la página HTML al navegador.</li>
+                  
+                </ul>
+
+
+            </div>
+        </div>
+
+        <strong><em>Cómo pudimos darnos cuenta la vista y el modelo nunca están en contacto directamente, el controlador es el que hace posible la concordancia entre éstas. </em></strong>
+        <br>
+        <br>
+        <div class="alert alert-danger" role="alert">NOTA: Las vistas en Ruby estan en formato .erb.html o html.erb.
+                erb: Embedded RuBy. Lo cual nos dice que es un archivo html con código Ruby embebido.</div>
+        
+
+       <!--/#meet-the-team-->
+    </section><!--/#about-us-->
+
+
+    <!-- Jonatan -->
+    <!-- Se importa el menu de footer -->
+    <div ng-include src = " 'plantillas/footer.html' "></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
